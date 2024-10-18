@@ -1,0 +1,39 @@
+nav.navbar-container {
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+nav .nav-title {
+    font-size: 20px;
+}
+
+nav .nav-right-container {
+    font-size: 15px;
+}
+
+nav .nav-right-container .nav-link-container {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px
+}
+
+nav .nav-right-container .nav-link-container li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+nav .nav-right-container .nav-link-container li a.nav-link-active {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+body {
+  background-color: rgb(255, 222, 6);
+}
+
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  background-color: rgb(13, 78, 96);
+}
+
+.message-container {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin: 10px 10px;
+}
+
+.message {
+  width: 300px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-container.message-container {
+  margin-left: 40px;
+  position: relative;
+}
+
+.reply-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+
+.reply-btn:hover {
+  color: rgb(0, 217, 255);
+}
+
+.arrow {
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  width: 20px;
+  height: 35px;
+  left: -25px;
+  border-bottom-left-radius: 20px;
+}
+
+#show {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: rgb(13, 110, 155);
+}
+#show:hover {
+  background-color: rgb(16, 142, 201);
+}
+
+.root-comment-container {
+  margin: 20px 10px;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+}
+
+#root-textarea {
+  width: 98%;
+  height: 90px;
+  padding: 10px;
+  outline: none;
+  background-color: white !important;
+  border-bottom: 2px solid rgb(174, 174, 174);
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+  overflow-y: auto;
+  resize: none;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: inherit;
+}
+
+.btn {
+  width: 60px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: rgb(3, 183, 249);
+  color: white;
+  cursor: pointer;
+}
+
+#root-comment-btn:hover {
+  background-color: rgb(3, 151, 205);
+}
